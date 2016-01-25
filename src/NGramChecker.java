@@ -32,6 +32,7 @@ public class NGramChecker {
         for(Expression expression:expressions){
             if(!expression.isInvoked){
                 JOptionPane.showMessageDialog(null, "The token \""+expression.word+"\" has incorrect usage, please check your grammar", "Grammatical Error", JOptionPane.ERROR_MESSAGE);
+                s+="\n"+expression.word+"\n";
             }
         }
         return s;
